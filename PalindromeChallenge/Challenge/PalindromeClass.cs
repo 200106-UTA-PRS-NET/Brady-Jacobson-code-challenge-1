@@ -4,13 +4,16 @@ namespace Challenge
 {
     public class PalindromeClass
     {
-        public bool checkPalindrome(string item)
+        public bool checkPalindrome(string original)
         {
+            string item = original.ToUpper();
             bool result = false;
             int index1;
             int index2;
             index1 = 0;
             index2 = item.Length-1;
+            char aa = 'a';
+            
             for (int i = 0; i < item.Length; i++)
             {
                 if(index1 > index2)
